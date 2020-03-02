@@ -1,0 +1,163 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+
+int a;
+float result,n1,n2,resto,sub;
+
+
+
+
+
+cout << ("PROJETOS DIARIOS JULIO LACERDA") << endl;
+cout << ("CALCULADORA SIMPLES") << endl;
+
+cout << ("______________________________________") << endl;
+
+cout << ("Escolha um numero relacionado com a opcao que deseja") <<endl;
+   cout << (" ") << endl;
+   cout << ("1 - Soma") <<endl;
+   cout << ("2 - Subtracao") <<endl;
+   cout << ("3 - Divisao") <<endl;
+   cout << ("4 - Multiplicacao") <<endl;
+   cout << ("5 - Porcentagem") <<endl;
+   cout << (" ") << endl;
+   x: {
+       cout << ("Digite aqui: ");
+       cin >> a;
+           if (a > 5) {
+               cout << ("Desculpe mas escolheu um numero invalido") << endl;
+               
+                goto x;
+                }
+                
+                else {
+                      if (a < 1)  {
+                cout << ("Desculpe mas escolheu um numero invalido") << endl;
+               
+                goto x;
+                      }     
+                }
+                
+               }
+  
+           if (a == 1) {
+               cout << ("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»") << endl;
+               cout << (" ") << endl;
+               cout << ("Escolheu 1 - SOMA") << endl;
+               cout << (" ") << endl;
+               cout << ("Insira o primeiro numero:      ");
+               cin >> n1;
+               cout << ("                                +") << endl;
+               cout << ("Insira o segundo numero:       ");
+               cin >> n2; result = (n1 + n2);
+               cout << ("                            _____________") << endl;
+               cout << "                               "<< result << endl;
+               
+               cout << (" ") << endl;
+               cout << (" ") << endl;
+               cout << ("O resultado da SOMA de ") << n1 << (" + ") << n1 << (" foi: ") << result << endl;
+               cout << (" ") << endl;
+               cout << ("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»") << endl;
+           }
+              
+           if (a == 2) {
+               cout << ("______________________________________") << endl;
+               cout << ("Escolheu 2 - SUBTRACAO") << endl;
+               cout << (" ") << endl;
+               cout << ("Insira o primeiro numero: ");
+               cin >> n1;
+               cout << ("Agora o segundo numero: ");
+               cin >> n2;
+               cout << ("______________________________________") << endl;
+              
+               result = (n1 - n2);
+              
+               cout << ("O resultado da SUBTRACAO de ") << n1 << (" e ") << n2 << (" foi: ") << result << endl;
+               cout << (" ") << endl;    
+           }
+          
+           if (a == 3) {
+               cout << ("______________________________________") << endl;
+               cout << ("Escolheu 3 - DIVISAO") << endl;
+               cout << (" ") << endl;
+               cout << ("Insira o primeiro numero: ");
+               cin >> n1;
+               oi: {
+               cout << ("Agora o segundo numero: ");
+               cin >> n2;
+                 if (n2 == 0){
+                 cout << " " << endl;
+                 cout << "Numero invalido. Devera escolher um numero diferente de 0" << endl;
+                   cout << " " << endl;
+                 goto oi;
+                 }
+               }
+              
+               cout << ("______________________________________") << endl;
+              
+               result = (n1 / n2);
+               
+               cout << ("O resultado da DIVISAO de ") << n1 << (" e ") << n2 << (" foi: ") << result << endl;
+               cout << (" ") << endl;
+               
+               cout << ("O RESTO desta DIVISAO foi de: ") << resto << endl;
+               cout << (" ") << endl; 
+           }
+          
+           if (a == 4) {
+               cout << ("______________________________________") << endl;
+               cout << ("Escolheu 4 - MULTIPLICACAO") << endl;
+               cout << (" ") << endl;
+               cout << ("Insira o primeiro numero: ");
+                   cin >> n1;
+               cout << ("Agora o segundo numero: ");
+                   cin >> n2;
+               cout << ("______________________________________") << endl;
+              
+               result = (n1 * n2);
+              
+               cout << ("O resultado da MULTIPLICACAO de ") << n1 << (" e ") << n2 << (" foi: ") << result << endl;
+               cout << (" ") << endl;   
+           }
+          
+           if (a == 5) {
+               cout << ("______________________________________") << endl;
+               cout << ("Escolheu 2 - PORCENTAGEM") << endl;
+               cout << (" ") << endl;
+               cout << ("Insira o numero: ");
+                   cin >> n1;
+               cout << ("Agora qual a porcentagem que deseja: ");
+                   cin >> n2;
+               cout << ("______________________________________") << endl;
+              
+               result = n1*(n2/100);
+               
+               cout << (" ") << endl;
+               cout << (" ") << endl;
+               
+               cout << "RESULTADO: "<< n2 << ("% de ") << n1 << (" e igual a: ") << result << endl;
+               cout << (" ") << endl;
+               
+               sub = (n1 - result);
+               
+               cout << "RESULTADO SUBTRACAO: "<< n2 << ("% DE DESCONTO DO VALOR ") << n1 << (" E IGUAL A: ") << sub << endl;
+               cout << (" ") << endl;
+               
+               sub = (n1 + result);
+               
+               cout << "RESULTADO SOMA: "<< n2 << ("% ADICIONADO AO VALOR ") << n1 << (" E IGUAL A: ") << sub << endl;
+               cout << (" ") << endl;
+           }
+           
+               cout << (" ") << endl;
+               cout << (" ") << endl;
+               cout << ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~") << endl;
+               cout << ("Este é o final do processamento. Obrigado por usar meu programa") << endl;
+               cout << ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~") << endl;
+              
+              
+
+return 0;
+}
